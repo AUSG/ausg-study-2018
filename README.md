@@ -11,3 +11,9 @@ AUSG 스터디 내용 정리용 저장소
 * 스터디 결과물을 사용해 겨울 세미나 시리즈 진행
 * 주기적으로 밋업을 통해 스터디내용 발표
 * ***낙오자가 없어야한다***
+
+1. [STUDY 1 Data Engineering](DataEngineering)
+2. [STUDY 2 Machine Learning](ML)
+3. [STUDY 3 Node.js](NodeJS)
+4. [STUDY 4 FullStack Developer](ToBeCharming)
+5. [STUDY 5 TypeScript](TypeScript)
