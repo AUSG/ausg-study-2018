@@ -1,4 +1,4 @@
-# Nodejs 기초부터 외주까지
+# Nodejs
 
 ### Coverage
 - Javascript ES5, ES6
@@ -32,7 +32,9 @@
   - ERD 만들어 보기 실습
 
 - 4주차 (9월 27일 예정)
-  -
+  - 자신만의 스켈레톤 만들기
+
+  
 
 
 
