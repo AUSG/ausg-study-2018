@@ -6,7 +6,9 @@
 
 
 
-#### NoSQL이란
+
+
+### NoSQL이란
 
 > "Not Only SQL"
 >
@@ -14,7 +16,9 @@
 
 
 
-#### NoSQL의 특징
+
+
+### NoSQL의 특징
 
 1. 데이터의 스키마를 미리 정의할 필요가 없으며, 시간이 지나더라도 언제든지 바꿀 수 있음
 
@@ -51,7 +55,7 @@
 
 
 
-#### NoSQL의 데이터 모델 종류
+### NoSQL의 데이터 모델 종류
 
 **1) Key-Value Stores**
 
@@ -103,7 +107,7 @@ Document Stores는 값을 JSON 문서와 같은 반 구조화된 형식으로 �
 
 
 
-#### CAP 이론이란
+### CAP 이론이란
 
 분산된 시스템이 가지는 세가지 특성을 동시에 충족시키는 것은 불가능하며, 이 중 두 가지만을 취할 수 있다는 것
 
@@ -127,7 +131,7 @@ Document Stores는 값을 JSON 문서와 같은 반 구조화된 형식으로 �
 
 
 
-#### CAP Theorem 오해와 진실
+### CAP Theorem 오해와 진실
 
 ![](http://eincs.com/images/2013/06/truth-of-cap-theorem-diagram.png)
 
@@ -137,11 +141,15 @@ Partition Tolerance는 분할 내구성 보다는 분할 용인이라고 번역�
 
 
 
-PACELC Theorem
+
+
+### PACELC Theorem
 
 ![](http://happinessoncode.com/images/cap-theorem-and-pacelc/pacelc.png)
 
 CAP 이론의 이러한 단점들을 보완하기 위해 나온 이론이 바로 PACELC 이론이다. CAP 이론이 네트워크 파티션 상황에서 일관성-가용성 축을 이용하여 시스템의 특성을 설명한다면, PACELC 이론은 거기에 정상 상황이라는 새로운 축을 더한다. PACELC는 P(네트워크 파티션)상황에서 A(가용성)과 C(일관성)의 상충 관계와 E(else, 정상)상황에서 L(지연 시간)과 C(일관성)의 상충 관계를 설명한다.
+
+
 
 
 
