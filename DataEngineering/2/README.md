@@ -2,19 +2,13 @@
 
 ## **허진호**
 
-### 주제 : NoSQL, CAP theory and NoSQL use case
-
-
-
-
+## 주제 : NoSQL, CAP theory and NoSQL use case
 
 ### NoSQL이란
 
 > "Not Only SQL"
 >
 > 기존의 관계형 DBMS가 갖고있는 특성 뿐만 아니라 다른 특성들을 부가적으로 지원하다는 것을 의미.
-
-
 
 
 
@@ -53,8 +47,6 @@
 
 
 
-
-
 ### NoSQL의 데이터 모델 종류
 
 **1) Key-Value Stores**
@@ -64,8 +56,6 @@
 
 
 Key/Value Stores는 고유한 Key에 하나의 Value를 가지고 있는 형태를 의미한다. 이런 단순한 구조때문에 GET이나 PUT 함수만을 지원한다. 이 데이터 모델의 장점은 단순함이다. 매우 간단한 추상화를 통해 데이터를 쉽게 분할하고 쿼리할 수 있으므로 시스템은 짧은 대기시간과 높은 처리량을 달성할 수 있다. 하지만 복잡한 쿼리 작업이 필요한 경우에는 강력하지 않다. Key/Value Stores의 예로는 Redis가 있다.
-
-
 
 
 
@@ -81,8 +71,6 @@ Wide column stores는 Key-Value Store가 가지는 단점들을 보완한 형태
 
 
 
-
-
 **3) Document  Stores**
 
 : ![](https://cdn-images-1.medium.com/max/600/1*gdxUo2ojiTX2JQIkA2hxcQ.png)
@@ -93,8 +81,6 @@ Document Stores는 값을 JSON 문서와 같은 반 구조화된 형식으로 �
 
 
 
-
-
 **4) Graph Stores**
 
 : 그래프 DB는 SQL 또는 다른 모든 NoSQL 데이터베이스와 매우 다르게 데이터를 그래프로 구성한다. 페이스북 친구 데이터는 전형적인 예이다. 그래프 데이터베이스는 노드와 엣지로 구성되며 둘 다 중요한 정보를 포함할 수 있다. 예를 들어, 두 개의 다른 노드가 사람을 나타낼 수 있고 모든 노드 프로파일 세부 정보(이메일, 주소, 사진 등)가 해당 노드와 함께 저장된다. 그들 사이의 엣지는 두 사람이 친구라는 것을 나타낼 수 있고, 그들의 우정의 기간과 같은 데이터를 저장할 수 있다.
@@ -102,8 +88,6 @@ Document Stores는 값을 JSON 문서와 같은 반 구조화된 형식으로 �
 [출처1]: https://medium.baqend.com/nosql-databases-a-survey-and-decision-guidance-ea7823a822d
 [출처2]: https://medium.com/@adamberlinskyschine/wtf-is-nosql-f1338cec6053
 [출처3]: https://medium.com/indexoutofrange/what-is-the-problem-with-key-value-databases-and-how-wide-column-stores-solve-it-5445efbae538
-
-
 
 
 
@@ -129,11 +113,11 @@ Document Stores는 값을 JSON 문서와 같은 반 구조화된 형식으로 �
 
 
 
-
-
 ### CAP Theorem 오해와 진실
 
 ![](http://eincs.com/images/2013/06/truth-of-cap-theorem-diagram.png)
+
+
 
 Partition Tolerance는 분할 내구성 보다는 분할 용인이라고 번역하는 것이 맞다. P의 정의는 네트워크가 임의의 메시지 손실을 할 수 있는 것을 허용하느냐이다. P를 포기하려면 절대로 장애가 나지 않는 네트워크를 구성해야 하지만 그런 것은 세상에 존재하지 않는다. 따라서 P는 언제나 선택되어야 하며 결국 Availability와 Consistency중 하나를 선택해야하는 것이다. 또한 CAP Theorem은 분산시스템이 전제조건이므로 RDBMS를 CAP에 적용하는 것은 맞지 않다. 그러므로 RDBMS를 CA라 하는 것은 맞지 않다.
 
@@ -141,15 +125,13 @@ Partition Tolerance는 분할 내구성 보다는 분할 용인이라고 번역�
 
 
 
-
-
 ### PACELC Theorem
 
 ![](http://happinessoncode.com/images/cap-theorem-and-pacelc/pacelc.png)
 
+
+
 CAP 이론의 이러한 단점들을 보완하기 위해 나온 이론이 바로 PACELC 이론이다. CAP 이론이 네트워크 파티션 상황에서 일관성-가용성 축을 이용하여 시스템의 특성을 설명한다면, PACELC 이론은 거기에 정상 상황이라는 새로운 축을 더한다. PACELC는 P(네트워크 파티션)상황에서 A(가용성)과 C(일관성)의 상충 관계와 E(else, 정상)상황에서 L(지연 시간)과 C(일관성)의 상충 관계를 설명한다.
-
-
 
 
 
