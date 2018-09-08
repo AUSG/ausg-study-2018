@@ -4,7 +4,9 @@
 
 ### 주제 : NoSQL, CAP theory and NoSQL use case
 
-### NoSQL이란
+
+
+#### NoSQL이란
 
 > "Not Only SQL"
 >
@@ -12,7 +14,7 @@
 
 
 
-### NoSQL의 특징
+#### NoSQL의 특징
 
 1. 데이터의 스키마를 미리 정의할 필요가 없으며, 시간이 지나더라도 언제든지 바꿀 수 있음
 
@@ -49,7 +51,7 @@
 
 
 
-### NoSQL의 데이터 모델 종류
+#### NoSQL의 데이터 모델 종류
 
 **1) Key-Value Stores**
 
@@ -101,7 +103,7 @@ Document Stores는 값을 JSON 문서와 같은 반 구조화된 형식으로 �
 
 
 
-### CAP 이론이란
+#### CAP 이론이란
 
 분산된 시스템이 가지는 세가지 특성을 동시에 충족시키는 것은 불가능하며, 이 중 두 가지만을 취할 수 있다는 것
 
@@ -125,7 +127,7 @@ Document Stores는 값을 JSON 문서와 같은 반 구조화된 형식으로 �
 
 
 
-### CAP Theorem 오해와 진실
+#### CAP Theorem 오해와 진실
 
 ![](http://eincs.com/images/2013/06/truth-of-cap-theorem-diagram.png)
 
@@ -135,7 +137,7 @@ Partition Tolerance는 분할 내구성 보다는 분할 용인이라고 번역�
 
 
 
-### PACELC Theorem
+PACELC Theorem
 
 ![](http://happinessoncode.com/images/cap-theorem-and-pacelc/pacelc.png)
 
@@ -171,5 +173,23 @@ Redis는 인메모리에서 돌아가는 NoSQL 데이터베이스이다. 인메�
 
 [출처]: http://louie0.tistory.com/131
 
+------
 
+## 정지윤
+
+### 주제:
+
+------
+
+## 안효진
+
+### 주제:
+
+------
+
+## 장혜정
+
+### 주제:
+
+------
 
