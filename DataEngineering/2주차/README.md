@@ -357,9 +357,9 @@ Map : 하나의 큰 데이터를 여러개의 조각으로 나눠서 처리하�
 >shuffling(셔플링): 처리된 결과를 여러 머신에 이리저리 재배치하는 모습
 
 Reduce : 처리 결과를 모아서 하나로 합쳐서 결과를 내는 단계
-리듀서(reducer)는 모든 키의 값을 처리하며 결과를 HDFS나 다른 영구 저장소에 저장한다. 
+리듀서(reducer)는 모든 키의 값을 처리하며 결과를 HDFS나 다른 영구 저장소에 저장한다. <br>
 <그림 예시>
-![mapreduce](mapreduce.png)
+![mapreduce](https://user-images.githubusercontent.com/25451357/45371923-a51db480-b626-11e8-82ee-36f3583526ba.png)
 
 # Hadoop에서의 Read/Write
 1. Read<br>
