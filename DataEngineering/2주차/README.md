@@ -358,7 +358,8 @@ Map : 하나의 큰 데이터를 여러개의 조각으로 나눠서 처리하�
 
 Reduce : 처리 결과를 모아서 하나로 합쳐서 결과를 내는 단계
 리듀서(reducer)는 모든 키의 값을 처리하며 결과를 HDFS나 다른 영구 저장소에 저장한다. 
-
+<그림 예시>
+![mapreduce](/Users/user/Desktop/mapreduce.png)
 
 # Hadoop에서의 Read/Write
 1. Read<br>
