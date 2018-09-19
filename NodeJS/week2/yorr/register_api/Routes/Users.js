@@ -55,7 +55,9 @@ users.post('/register', function(req, res) {
 
 /*
 이메일 중복 검사 실패
-DB에서 Unique값은 줘서 중복 등록은 안되지만 Postman에 출력을 하지 못함.
+테이블 email value에 unique 줘서 중복 등록은 안되지만 (error 1 발생) 내부적으로 처리하지는 못했음
+
+--> 시도한 코드
 
 users.post('/register', function(req, res) {
 
