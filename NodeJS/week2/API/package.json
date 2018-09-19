@@ -1,0 +1,23 @@
+{
+  "name": "board-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "async": "^2.6.1",
+    "aws-sdk": "^2.313.0",
+    "cookie-parser": "~1.4.3",
+    "crypto-promise": "^2.1.0",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "moment": "^2.22.2",
+    "morgan": "~1.9.0",
+    "multer": "^1.3.1",
+    "multer-s3": "^2.7.0",
+    "promise-mysql": "^3.3.1"
+  }
+}
