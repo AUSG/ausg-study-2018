@@ -1,0 +1,25 @@
+{
+  "name": "registration-test",
+  "version": "1.0.0",
+  "description": "registration with jwt token",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "jwt",
+    "passport",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "jsonwebtoken": "^7.4.2",
+    "mysql": "^2.14.1",
+    "nodemon": "^1.18.4"
+  }
+}
