@@ -1,6 +1,210 @@
 # ML 스터디 3주차 : Activation functions
 
 ## **정초이**
+
+# implementation
+## with Numpy, Matplotlib
+
+
+```python
+import numpy as np
+import matplotlib.pylab as plt
+```
+
+## Activation Functions
+### ***선형 함수 linear function***
+
+
+```python
+def linear_function(x):
+    y = x
+    return y
+
+x = np.arange(10)
+y = linear_function(x)
+plt.plot(x,y)
+plt.ylim(-0.1, 9.1)
+plt.show()
+```
+
+
+![png](implementation_files/implementation_3_0.png)
+
+
+### ***계단 함수 step function***
+
+
+```python
+def step_function(x):
+    y = x > 0
+    return y.astype(np.int)
+
+x = np.arange(-5.0, 5.0, 0.1)
+y = step_function(x)
+plt.plot(x,y)
+plt.ylim(-0.1, 1.1)
+plt.show()
+```
+
+
+![png](implementation_files/implementation_5_0.png)
+
+
+### ***시그모이드 함수 sigmoid function***
+
+
+```python
+def sigmoid(x):
+    return 1 / (1+np.exp(-x))
+
+x = np.arange(-5.0, 5.0, 0.1)
+y = sigmoid(x)
+plt.plot(x,y)
+plt.ylim(-0.1, 1.1)
+plt.show()
+```
+
+
+![png](implementation_files/implementation_7_0.png)
+
+
+### ***하이퍼볼릭 탄젠트 함수 hyperbolic tangent function***
+
+
+```python
+def hyperbolic_tangent(x):
+    return np.tanh(x)
+
+x = np.arange(-5.0, 5.0, 0.1)
+y = hyperbolic_tangent(x)
+plt.plot(x,y)
+plt.ylim(-1.1, 1.1)
+plt.show()
+```
+
+
+![png](implementation_files/implementation_9_0.png)
+
+
+### ***렐루 함수 ReLU(Recified Linear Unit) function***
+
+
+```python
+def relu(x):
+    return np.maximum(0,x)
+
+x = np.arange(-5.0, 5.0, 0.1)
+y = relu(x)
+plt.plot(x,y)
+plt.ylim(-0.1, 5.1)
+plt.show()
+```
+
+
+![png](implementation_files/implementation_11_0.png)
+
+
+### ***리키 렐루 함수 Leaky ReLU function***
+
+
+```python
+def leaky_relu(x):
+    alpha = 0.05
+    return np.where(x > 0, x, x * alpha)
+
+x = np.arange(-5.0, 5.0, 0.1)
+y = leaky_relu(x)
+plt.plot(x,y)
+plt.ylim(-1.1, 5.1)
+plt.show()
+```
+
+
+![png](implementation_files/implementation_13_0.png)
+
+
+### ***소프트맥스 함수 Softmax function***
+
+
+```python
+def softmax(x):
+    e_x = np.exp(x - np.max(x))
+    return e_x / np.sum(e_x)
+```
+
+## Perceptron
+### ***AND***
+
+
+```python
+def AND(x1, x2):
+    x = np.array([x1, x2])
+    w = np.array([0.5, 0.5])
+    b = -0.99
+    tmp = np.sum(w*x) + b
+    result = 0 if tmp <= 0 else 1
+
+    return result
+
+print(AND(0,0))
+print(AND(1,0))
+print(AND(0,1))
+print(AND(1,1))
+```
+
+    0
+    0
+    0
+    1
+
+
+### ***XOR including AND, OR, NAND***
+
+
+```python
+def AND(x1, x2):
+    w1, w2, theta = 0.5, 0.5, 0.99
+    tmp = x1*w1 + x2*w2
+    result = 0 if tmp <= theta else 1
+
+    return result
+
+def OR(x1, x2):
+    w1, w2, theta = 0.5, 0.5, 0.49
+    tmp = x1*w1 + x2*w2
+    result = 0 if tmp <= theta else 1
+
+    return result
+
+def NAND(x1, x2):
+    x = np.array([x1, x2])
+    w = np.array([-0.5, -0.5])
+    b = 0.99
+    tmp = np.sum(w*x) + b
+    result = 0 if tmp <= 0 else 1
+
+    return result
+
+def XOR(x1,x2):
+    s1 = NAND(x1,x2)
+    s2 = OR(x1,x2)
+    result = AND(s1,s2)
+
+    return result
+
+print(XOR(0,0))
+print(XOR(1,0))
+print(XOR(0,1))
+print(XOR(1,1))
+```
+
+    0
+    1
+    1
+    0
+
+
+
 --------------
 ## **조민지**
 
