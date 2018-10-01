@@ -1,4 +1,4 @@
-# ML 스터디 3주차 : Activation functions
+# ML 스터디 4주차 : Numpy로 Activation functions 및 Perceptron 구현하기
 
 ## **정초이**
 
