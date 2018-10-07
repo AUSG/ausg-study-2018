@@ -23,10 +23,14 @@ process.env.SECRET_KEY = "test";
 // register handler
 users.post('/register', function(req, res) {
 
+    // FIXME let, const를 사용하시는게 좋을거같습니다~
     var appData = {
         "error": 1,
         "data": ""
     };
+
+    // FIXME js에서 키값은 "" 안붙여도 됩니다. 주로 json에서만 붙입니다
+    // 컨벤션마다 다르지만 object와 json을 구분하기 위해서기도 합니다
     var userData = {
         "email": req.body.email, //body-parser로 get 요청도 받으려면 || req.query.email
         "password": req.body.password,
@@ -36,6 +40,7 @@ users.post('/register', function(req, res) {
         if (err) {
             appData["error"] = 1;
             appData["data"] = "Server Error";
+            // FIXME return res.status(500).json(appData); 으로 변경하게 된다면 아래 else를 사용하지 않아도 됩니다.
             res.status(500).json(appData); //내부 서버 에러
         } else {
             connection.query('INSERT INTO users SET ?', userData, function(err, rows, fields) {
@@ -125,6 +130,7 @@ users.post('/login', function(req, res) {
         if (err) {
             appData["error"] = 1;
             appData["data"] = "Server Error";
+            // FIXME: 여기서도 return을 하게된다면 아래 else 구문이 필요 없습니다~~
             res.status(500).json(appData);
         } else { // ?에 email
             connection.query('SELECT * FROM users WHERE email = ?', [email], function(err, rows, fields) {
@@ -180,6 +186,7 @@ users.use(function(req, res, next) {
 });
 
 // 로그인 후 생성된 토큰
+// FIXME: uri를 users 로 변경하면 rest api 컨셉에 더 적절할것 같습니다
 users.get('/getUsers', function(req, res) {
 
     var appData = {};

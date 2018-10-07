@@ -10,8 +10,10 @@ router.post('/', async function (req, res) {
     let id = req.body.id;
     let pw = req.body.pw;
 
+    // FIXME return을 사용하면 else를 안써도 된다.
+    // 예외처리 조건에 충족할경우 바로 return해서 else를 쓰지 않게 수정 할 것.
     if (!id || !pw) { // 클라가 아이디나 비번 값은 안줬을 때
-        res.status(400).send({ 
+        res.status(400).send({
             message : "Null Value"
         });
     } else { // 아이디 중복 확인
@@ -19,7 +21,7 @@ router.post('/', async function (req, res) {
         let checkResult = await pool.queryParamCnt_Arr(checkQuery, [id]);
 
         if (!checkResult) { // 서버가 결과 값을 주지 않음
-            res.status(500).send({ 
+            res.status(500).send({
                 message : "Internal Server Error"
             });
         } else if (checkResult.length === 1) { // 중복 아이디 존재
@@ -46,7 +48,7 @@ router.post('/', async function (req, res) {
             }
         }
     }
-    
+
 });
 
 module.exports = router;
