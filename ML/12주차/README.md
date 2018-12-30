@@ -89,3 +89,4 @@
 - AdaDelta
 - Natural Gradient Descent and kSGD
 
+***
