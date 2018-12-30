@@ -44,3 +44,4 @@
 9. [9주차 : Decision Tree](9주차)
 10. [10주차 : SVM, Random Forest](10주차)
 11. [11주차 : k-NN Algorithm](11주차)
+12. [12-1주차 : ](12주차)
