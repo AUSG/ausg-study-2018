@@ -1,8 +1,16 @@
-# ML 스터디 13주차 : Cross Validation, Gradient Descent Optimization, Dropout
+# ML 스터디 13주차 : Dropout, Cross Validation, Gradient Descent Optimization
+
+## **조민지**
+
+***
+
+## **정초이**
+
+***
 
 ## **남궁선**
 ## Gradient Descent Optimization for Neural Network
-<img src="./images/0.gif" width="60%">
+<img src="./images/0.gif" width="50%">
 
 ###### Gradient Descent Optimization Algorithms at Long Valley
 
