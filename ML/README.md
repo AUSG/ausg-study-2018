@@ -45,4 +45,5 @@
 10. [10주차 : SVM, Random Forest](10주차)
 11. [11주차 : k-NN Algorithm](11주차)
 12. [12주차 : Bayesian Network](12주차)
-13. [13주차 : Dropout, Cross validation, Gradient Descent Optimization]()
+13. [13주차 : Dropout, Cross validation, Gradient Descent Optimization](13주차)
+14. [14주차 : Confusion Matrix / Standardization, Normalization, Regularization / Data Preprocessing](14주차)
