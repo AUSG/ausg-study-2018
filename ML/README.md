@@ -33,12 +33,17 @@
 - AWS의 다양한 머신러닝 서비스를 사용하여본다.
 
 ### 스터디 내용
-1. [1주차](1주차)
-2. [2주차](2주차)
-3. [3주차](3주차)
-4. [4주차](4주차)
-5. [5주차](5주차)
-6. [6주차](6주차)
-7. [8주차](8주차)
-8. [9주차](9주차)
-9. [10주차](10주차)
+1. [1주차 : Python Deep dive](1주차)
+2. [2주차 : Perceptron](2주차)
+3. [3주차 : Activation functions](3주차)
+4. [4주차 : Numpy로 Activation functions 및 Perceptron 구현하기](4주차)
+5. [5주차 : Mathmatics for studying AI](5주차)
+6. [6주차 : Gradient Descent Alogrithm](6주차)
+7. 7주차 : 리뷰
+8. [8주차 : Backpropagation Algorithm](8주차)
+9. [9주차 : Decision Tree](9주차)
+10. [10주차 : SVM, Random Forest](10주차)
+11. [11주차 : k-NN Algorithm](11주차)
+12. [12주차 : Bayesian Network](12주차)
+13. [13주차 : Dropout, Cross validation, Gradient Descent Optimization](13주차)
+14. [14주차 : Confusion Matrix / Standardization, Normalization, Regularization / Data Preprocessing](14주차)
