@@ -1,4 +1,4 @@
-ML 스터디 14주차 : Feature selection, PCA, P-value, Weight initialization, Hyperparameter optimization
+ML 스터디 15주차 : Feature selection, PCA, P-value, Weight initialization, Hyperparameter optimization
 =======================================================================================================
 
 조민지
