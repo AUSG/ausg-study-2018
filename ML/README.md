@@ -48,3 +48,4 @@
 13. [13주차 : Dropout, Cross validation, Gradient Descent Optimization](13주차)
 14. [14주차 : Confusion Matrix / Standardization, Normalization, Regularization / Data Preprocessing](14주차)
 15. [15주차 : Feature selection, PCA, Statistical Hypothesis Test, Weight initialization, Hyperparameter optimization](15주차)
+16. [RNN, CNN, RL 심화과정](https://github.com/AUSG/ML_Study)
