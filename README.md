@@ -1,6 +1,12 @@
 # AUSG_Study
 AUSG 스터디 내용 정리용 저장소
 
+
+## Study List
+
+1. 2018 - https://github.com/AUSG/AUSG_Study
+2. 2019-1 - https://github.com/AUSG/study_2019_first
+
 ## 스터디 규칙
 * 주 단위 스터디 진행
 * 주 1회 학습내용 공유
