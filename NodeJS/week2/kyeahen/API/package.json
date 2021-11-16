@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "async": "^2.6.1",
-    "aws-sdk": "^2.313.0",
+    "aws-sdk": "^2.814.0",
     "cookie-parser": "~1.4.3",
     "crypto-promise": "^2.1.0",
     "debug": "~2.6.9",
