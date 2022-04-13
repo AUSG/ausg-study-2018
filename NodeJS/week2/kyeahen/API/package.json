@@ -6,7 +6,7 @@
     "start": "nodemon ./bin/www"
   },
   "dependencies": {
-    "async": "^2.6.1",
+    "async": "^3.2.2",
     "aws-sdk": "^2.313.0",
     "cookie-parser": "~1.4.3",
     "crypto-promise": "^2.1.0",
